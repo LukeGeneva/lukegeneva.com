@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`
+    title: `Luke Geneva`,
+    description: `Luke Geneva's personal blog. Software development, books, and musings.`,
+    author: `Luke Geneva`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,8 +21,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#1b5e20`,
+        theme_color: `#1b5e20`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
       }
@@ -33,6 +33,12 @@ module.exports = {
         bucketName: 'lukegeneva.com',
         protocol: 'https',
         hostname: 'www.lukegeneva.com'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-134705735-1'
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
